@@ -3,10 +3,7 @@
  */
 package Armas;
 
-/**
- *
- * @author Sebastian
- */
+/* @author Javier117   */
 public class ArmasFuego {
     
 }
