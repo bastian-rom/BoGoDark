@@ -12,3 +12,4 @@ package Armadura;
 public class ArmaduraManos {
     
 }
+/*editada por bald*/
