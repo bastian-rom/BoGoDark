@@ -7,7 +7,7 @@ package Personajes;
 
 /**
  *
- * @author Sebastian
+ * @author Javier117
  */
 public class Animal {
     
