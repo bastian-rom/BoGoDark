@@ -12,3 +12,4 @@ package Personajes;
 public class Guerrillero {
     
 }
+/*[eidtada por bald]*/

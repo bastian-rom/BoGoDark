@@ -12,3 +12,4 @@ package Personajes;
 public class Policia {
     
 }
+/*[editada por bald]*/
