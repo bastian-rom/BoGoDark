@@ -14,19 +14,25 @@ public class Aliado {
     String nombre;
     int vida;
     int daño;
+    int defensa;
+    boolean aliado;
     
    public Aliado()
    {
     this.nombre="Aliado desconocido";
     this.vida =100;
     this.daño= 10;
+    this.defensa=10;
+    this.aliado=true;
    }
    
-   public Aliado(String Nombre,int Vida, int Daño)
+   public Aliado(int Defensa,String Nombre,int Vida, int Daño)
    {
     this.nombre=Nombre;
     this.vida =Vida;
     this.daño= Daño;
+    this.defensa=Defensa;
+    this.aliado=true;
    }
 
     public String getNombre() {
@@ -52,6 +58,12 @@ public class Aliado {
     public void setDaño(int daño) {
         this.daño = daño;
     }
-    
+    public int getDefensa() {
+        return defensa;
+    }
+
+    public void setDefensa(int defensa) {
+        this.defensa = defensa;
+    }
     
 }

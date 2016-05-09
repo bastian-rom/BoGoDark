@@ -11,4 +11,22 @@ package Personajes;
  */
 public class Doctor {
     
+    int curacion;
+    boolean doctor;
+    int regeneracion;
+    
+    public Doctor()
+    {
+    this.curacion=15;
+    this.doctor=true;
+    this.regeneracion=10;
+    }
+    
+    public Doctor (int Curacion, boolean Doctor, int Regeneracion)
+            
+    {
+        this.curacion=Curacion;
+        this.doctor=Doctor;
+        this.regeneracion=Regeneracion;
+    }
 }

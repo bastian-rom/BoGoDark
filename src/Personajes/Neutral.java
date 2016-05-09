@@ -11,4 +11,67 @@ package Personajes;
  */
 public class Neutral {
     
+   String nombre;
+   int vida;
+   int daño;
+   int defensa;
+   boolean neutral;
+   
+   public Neutral ()
+   {
+   this.nombre="desconocido";
+   this.vida=50;
+   this.daño=5;
+   this.defensa=10;
+   this.neutral=true;
+   }
+   public Neutral (String Nombre,int Vida,int Daño,int Defensa)
+   {
+       this.nombre=Nombre;
+       this.daño=Daño;
+       this.defensa=Defensa;
+       this.vida=Vida;
+   }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getVida() {
+        return vida;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+
+    public int getDaño() {
+        return daño;
+    }
+
+    public void setDaño(int daño) {
+        this.daño = daño;
+    }
+
+    public int getDefensa() {
+        return defensa;
+    }
+
+    public void setDefensa(int defensa) {
+        this.defensa = defensa;
+    }
+
+    public boolean isNeutral() {
+        return neutral;
+    }
+
+    public void setNeutral(boolean neutral) {
+        this.neutral = neutral;
+    }
+   
+    
 }

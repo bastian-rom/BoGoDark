@@ -7,5 +7,65 @@ package Personajes;
 
 /* @author Javier117 */
 public class Enemigo {
-    
+   String nombre;
+   int vida;
+   int daño;
+   int defensa;
+   boolean hostil;
+   
+   public Enemigo ()
+   {
+   this.nombre="desconocido";
+   this.vida=50;
+   this.daño=5;
+   this.defensa=10;
+   this.hostil=true;
+   }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getVida() {
+        return vida;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+
+    public int getDaño() {
+        return daño;
+    }
+
+    public void setDaño(int daño) {
+        this.daño = daño;
+    }
+
+    public int getDefensa() {
+        return defensa;
+    }
+
+    public void setDefensa(int defensa) {
+        this.defensa = defensa;
+    }
+
+    public boolean isHostil() {
+        return hostil;
+    }
+
+    public void setHostil(boolean hostil) {
+        this.hostil = hostil;
+    }
+   public Enemigo (String Nombre,int Vida,int Daño,int Defensa)
+   {
+       this.nombre=Nombre;
+       this.daño=Daño;
+       this.defensa=Defensa;
+       this.vida=Vida;
+   }
 }
