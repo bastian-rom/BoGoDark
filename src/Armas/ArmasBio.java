@@ -10,7 +10,8 @@ package Armas;
  * @author Sebastian
  */
 public class ArmasBio {
-    int daño;
+    
+   int daño;
     int municion;
     int alcance;
     String nombre;
@@ -34,6 +35,38 @@ public class ArmasBio {
     
     
    }
+
+    public int getDaño() {
+        return daño;
+    }
+
+    public void setDaño(int daño) {
+        this.daño = daño;
+    }
+
+    public int getMunicion() {
+        return municion;
+    }
+
+    public void setMunicion(int municion) {
+        this.municion = municion;
+    }
+
+    public int getAlcance() {
+        return alcance;
+    }
+
+    public void setAlcance(int alcance) {
+        this.alcance = alcance;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
     
 }
-}
+  
