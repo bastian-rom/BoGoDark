@@ -25,7 +25,10 @@ public class ArmasBlancas {
  }
  public class ArmasBlancas(int Alcance, int Longitud, int Daño, int Velocidadataque, String Nombre)
  {
-     this.alcance=Al
+     this.alcance=Alcance;
+     this.longitud=Longitud;
+     this.daño=Daño;
+     this.velocidadataque=Velocidadataque;
      
  }
  
