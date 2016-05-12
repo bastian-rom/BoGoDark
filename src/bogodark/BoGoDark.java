@@ -6,16 +6,10 @@
 package bogodark;
 
 import Personajes.*;
-
-/**
- *
- * @author Sebastian
- */
+/*
 public class BoGoDark {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         Javierh();
     }
@@ -61,4 +55,59 @@ public class BoGoDark {
      }
     }
     
-}
+}*/
+*******************************************************************************************
+
+/*ejercicio william camilo beltran */
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Sebastian
+ */
+public class BoGoDark {
+
+    
+    public static void main(String[] args) {
+        WilliamCBO();
+    }
+    
+    public static void WilliamCBO()
+    {
+     Bombero Robot=new Bombero("Smith",100,15,10,false);
+     Gamin Trixi=new Gamin("Yurany",100,15,10,true);
+     JOptionPane.showMessageDialog(null,Trixi.getNombre()+" VS "+Robot.getNombre());
+     while (Robot.getVida()>0 && Trixi.getVida()>0)
+     {
+            if( Math.random()>0.5)
+                if(Robot.getDaño()>Trixi.getDefensa())
+            {
+            int ataque = Robot.getDaño()- Trixi.getDefensa();
+            Trixi.setVida(Trixi.getVida()- ataque);
+            System.out.println(Robot.getNombre()+" le pega a "+Trixi.getNombre() +" el daño es de "+ - ataque );
+            System.out.println("la vida de "+Trixi.getNombre()+" deciende a "+Trixi.getVida());
+            } else 
+                {
+            int rebote=Trixi.getDefensa()-Robot.getDaño();
+            Robot.setVida(rebote - Robot.getVida());
+            System.out.println("la vida de "+Robot.getNombre()+ "se reduce a "+ Robot.getVida());
+                }
+            else{
+                int ataque = Trixi.getDaño()- Robot.getDefenza();
+                Robot.setVida(Robot.getVida()- ataque);
+                System.out.println(Trixi.getNombre()+" le pega a "+Robot.getNombre()+ " el daño es de "+ - ataque);
+                System.out.println("la vida de "+ Robot.getNombre()+ " se reduce a "+ Robot.getVida());
+                        } if (Trixi.getVida()== 0 || Robot.getVida()==0 )
+                        {if (Trixi.getVida()==0)
+                        {
+                            System.out.println("El ganador es "+ Robot.getNombre()+" con "+ Robot.getVida()+ " de vida");
+                            JOptionPane.showMessageDialog(null,"El ganador es "+ Robot.getNombre()+" con "+ Robot.getVida()+ " de vida");
+                        }
+                        else{
+                            System.out.println("el ganador es "+ Trixi.getNombre()+ " con "+ Trixi.getVida()+" de vida");
+                             JOptionPane.showMessageDialog(null,"el ganador es "+ Trixi.getNombre()+ " con "+ Trixi.getVida()+" de vida");
+                        }
+                        }
+}}}
+
+
