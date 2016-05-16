@@ -14,11 +14,10 @@ public class ArmaduraHombros {
     int defensa;
     int dureza;
     float peso; 
-}
 
 public class ArmaduraHombros {
     this.nombre=desconocido
-    this.material=plata;
+    this.material="Platino";
     this.defensa=20;
     this.dureza=50;
     this.peso=15;
