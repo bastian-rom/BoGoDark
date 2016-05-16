@@ -67,8 +67,8 @@ import javax.swing.JOptionPane;
  */
 public class BoGoDark {
 
-    
-    public static void main(String[] args) {
+    /*
+   public static void main(String[] args) {
         WilliamCBO();
     }
     
@@ -108,7 +108,11 @@ public class BoGoDark {
                              JOptionPane.showMessageDialog(null,"el ganador es "+ Trixi.getNombre()+ " con "+ Trixi.getVida()+" de vida");
                         }
                         }
+                        */
+    /////////////////////////////////////////////////////////////////////////////////////
+    
                         {/*JhonWOnka*/
+                        /*
                             Policia=new Policia("desconocido",100,15,10,false);
                             Guerrillero=new Guerrillero("desconocido",100,15,10,true);
                             boolean=primero=false;
@@ -131,12 +135,30 @@ public class BoGoDark {
                                     Policia.setlife(Guerrillero.getlife()-(Guerrillero.getdamage()-Policia.getdefense())
                                 }
                             }
-                            
-                             
-                            
-                           
-                            
                         }
-}}}
+}}}    */
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/* jeisson (bald)*/
+
+ public static void Jeisson()
+    {
+        Aliado Armado=new Aliado(10,"goku",100,10);
+        Policia Tombo=new Policia(100,"maricon",35,20,100);
+        JOptionPane.showMessageDialog(null,Armado.getNombre()+"vs"+Tombo.getNombre());
+        while (Armado.getVida()>0 && Tombo.getVida()>0){
+        boolean Primero=false;
+               if( Math.random()>0.5)
+               {
+                  Primero=true;
+               }
+               if(Primero)
+               {
+                   Armado.setVida(Armado.getVida()-(Armado.getDefensa()-Tombo.getDaño()));
+                   JOptionPane.showMessageDialog(null,Tombo.getNombre()+"lo casca a "+Armado.getNombre());
+               }
+               else{
+                   Tombo.setVida(Tombo.getVida()-(Tombo.getDefensa()-Armado.getDaño()));
+                   JOptionPane.showMessageDialog(null,Armado.getNombre()+"le hace la henkidama a"+Tombo.getNombre());
+               }  
 
