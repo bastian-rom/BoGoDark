@@ -23,3 +23,50 @@ public class ArmaduraHombros {
     this.dureza=50;
     this.peso=15;
 }
+ public ArmaduraManos(int Defensa,String Material,int Dureza,float Peso,int Daño){
+    this.material=Material;
+    this.defensa=Defensa;
+    this.dureza=Dureza;
+    this.peso=Peso;
+    this.daño=Daño;
+    }
+    
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public int getDefensa() {
+        return defensa;
+    }
+
+    public void setDefensa(int defensa) {
+        this.defensa = defensa;
+    }
+
+    public int getDureza() {
+        return dureza;
+    }
+
+    public void setDureza(int dureza) {
+        this.dureza = dureza;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
+
+    public int getDaño() {
+        return daño;
+    }
+
+    public void setDaño(int daño) {
+        this.daño = daño;
+    }
