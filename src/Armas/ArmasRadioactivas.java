@@ -8,7 +8,8 @@ package Armas;
  * @author Sebastian
  */
 public class ArmasRadioactivas {
-    int alcance;
+   
+     int alcance;
     int velocidad;
     int daño;
     int municion;
@@ -38,6 +39,62 @@ public class ArmasRadioactivas {
         this.equipado=Equipado;
         
     }
+
+    public int getAlcance() {
+        return alcance;
+    }
+
+    public void setAlcance(int alcance) {
+        this.alcance = alcance;
+    }
+
+    public int getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(int velocidad) {
+        this.velocidad = velocidad;
+    }
+
+    public int getDaño() {
+        return daño;
+    }
+
+    public void setDaño(int daño) {
+        this.daño = daño;
+    }
+
+    public int getMunicion() {
+        return municion;
+    }
+
+    public void setMunicion(int municion) {
+        this.municion = municion;
+    }
+
+    public int getCantidadataque() {
+        return cantidadataque;
+    }
+
+    public void setCantidadataque(int cantidadataque) {
+        this.cantidadataque = cantidadataque;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public boolean isEquipado() {
+        return equipado;
+    }
+
+    public void setEquipado(boolean equipado) {
+        this.equipado = equipado;
+    }
     
     
     
@@ -48,3 +105,4 @@ public class ArmasRadioactivas {
     
     
 }
+
