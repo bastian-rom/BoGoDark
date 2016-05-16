@@ -124,11 +124,11 @@ public class BoGoDark {
                                 }
                                 if(Primero)
                                 {
-                                    P2.setlife(P2.getlife()-(P1.getdamage()-P2.getdefense())
+                                    Policia.setlife(Guerrillero.getlife()-(Policia.getdamage()-Guerrillero.getdefense())
                                 }
                                 else
                                 {
-                                    P1.setlife(P2.getlife()-(P2.getdamage()-P1.getdefense())
+                                    Policia.setlife(Guerrillero.getlife()-(Guerrillero.getdamage()-Policia.getdefense())
                                 }
                             }
                             
