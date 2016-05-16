@@ -108,6 +108,46 @@ public class BoGoDark {
                              JOptionPane.showMessageDialog(null,"el ganador es "+ Trixi.getNombre()+ " con "+ Trixi.getVida()+" de vida");
                         }
                         }
+                        {
+                            public class BoGoDark {
+
+    
+                             public static void main(String[] args) {
+                                        JhonWOnka();
+                                        }
+                                        
+    
+                            public static void JhonWOnka()
+                            {
+                            Policia=new Policia("desconocido",100,15,10,false);
+                            Gamin Trixi=new Gamin("desconocido",100,15,10,true);
+                            JOptionPane.showMessageDialog(null,Policia.getNombre()+" VS "+Guerrillero.getNombre());
+                            boolean=primero=false;
+                            while (Policia.getVida()>0 && Guerrillero.getVida()>0);
+                            {
+                                if(math.ramdom()>0.5)
+                                {
+                                    primero=true;
+                                }
+                                else
+                                {
+                                    primero=false;
+                                }
+                                if(Primero)
+                                {
+                                    P2.setlife(P2.getlife()-(P1.getdamage()-P2.getdefense())
+                                }
+                                else
+                                {
+                                    P1.setlife(P2.getlife()-(P2.getdamage()-P1.getdefense())
+                                }
+                            }
+                            
+                             
+                            
+                           
+                            
+                        }
 }}}
 
 
