@@ -22,7 +22,7 @@ public class ArmaduraHombros {
     this.dureza=50;
     this.peso=15;
 }
- public ArmaduraManos(int Defensa,String Material,int Dureza,float Peso,int Daño){
+ public ArmaduraHombros(int Defensa,String Material,int Dureza,float Peso,int Daño){
     this.material=Material;
     this.defensa=Defensa;
     this.dureza=Dureza;
