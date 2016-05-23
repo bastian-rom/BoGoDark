@@ -10,11 +10,32 @@ import javax.swing.JOptionPane;
 
 public class BoGoDark {
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) 
+    {   
+        String[] opciones=new String[5];
+        opciones[0]="op1";
+        opciones[1]="op2";
+        opciones[2]="op3";
+        opciones[3]="mutante";
+        opciones[4]="persona";
+        
+                
+      intro();
+      int entrada=JOptionPane.showOptionDialog(null,"mensaje","cambiar titulo",JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE,null,opciones,opciones[0]);
+      System.out.println(entrada);
+      
     }
 
-    public static void Javierh() {
+     private static void intro()
+     
+    {
+        System.out.println("BoGoDark");
+        System.out.println("Historia");
+    }
+
+          
+   
+     public static void Javierh() {
         Aliado Soldado = new Aliado(10, "Soldado", 100, 10);
         Enemigo Saqueador = new Enemigo("Saqueador", 100, 10, 10);
 
