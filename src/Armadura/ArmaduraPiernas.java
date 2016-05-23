@@ -15,22 +15,20 @@ public class ArmaduraPiernas {
     int dureza;
     float peso;
     
-    public ArmaduraPiernas()
-            
+    ArmaduraPiernas()   
     {        
-        this.nombre=desconocido
+
         this.material="Platino";
         this.defensa=20;
         this.dureza=50;
         this.peso=10;
     }
-    public ArmaduraManos(int Defensa,String Material,int Dureza,float Peso,int Daño)
+    public ArmaduraPiernas(int Defensa,String Material,int Dureza,float Peso)
     {
         this.material=Material;
         this.defensa=Defensa;
         this.dureza=Dureza;
         this.peso=Peso;
-        this.daño=Daño;
     }
 
     public String getMaterial() {
@@ -63,13 +61,5 @@ public class ArmaduraPiernas {
 
     public void setPeso(float peso) {
         this.peso = peso;
-    }
-
-    public int getDaño() {
-        return daño;
-    }
-
-    public void setDaño(int daño) {
-        this.daño = daño;
     }
 }
