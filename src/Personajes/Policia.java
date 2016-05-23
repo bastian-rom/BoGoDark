@@ -12,7 +12,7 @@ package Personajes;
 public class Policia {
     String nombre;
     int vida;
-    int daño;
+    int damage;
     int defensa;
     int autoridad;
     boolean amigo;
@@ -21,16 +21,16 @@ public class Policia {
    {
        this.nombre="general";
        this.vida=100;
-       this.daño=35;
+       this.damage=35;
        this.defensa=20;
        this.autoridad=100;
        this.amigo=true;      
    }       
-    public Policia(int Vida, String Nombre,int Daño,int Defensa,int Autoridad)
+    public Policia(int Vida, String Nombre,int Damage,int Defensa,int Autoridad)
     {
         this.nombre=Nombre;
         this.vida=Vida;
-        this.daño=Daño;
+        this.damage=Damage;
         this.defensa=Defensa;
         this.autoridad=Autoridad;
         
@@ -52,12 +52,12 @@ public class Policia {
         this.vida = vida;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getDefensa() {

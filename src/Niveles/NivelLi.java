@@ -11,7 +11,7 @@ package Niveles;
 public class NivelLi {
    String nivel_3;
    int incremento_vida;
-   int incremento_daño;
+   int incremento_damage;
    int incremento_defensa;
    boolean habilidad_especial;
    
@@ -20,7 +20,7 @@ public class NivelLi {
 {
 this.nivel_3="nivel 3";
 this.incremento_vida= 20;
-this.incremento_daño= 20;
+this.incremento_damage= 20;
 this.incremento_defensa=20;
 this.habilidad_especial=true;
 
@@ -28,11 +28,11 @@ this.habilidad_especial=true;
 ya que el litio el metal mas ligeros*/
 
 }
- public NivelLi (String Nivel_3,int IncrementoVida,int IncrementoDaño,int IncrementoDefensa,boolean HabilidadEspecial) 
+ public NivelLi (String Nivel_3,int IncrementoVida,int IncrementoDamage,int IncrementoDefensa,boolean HabilidadEspecial) 
  {
      this.nivel_3=Nivel_3;
      this.incremento_vida=IncrementoVida;
-     this.incremento_daño=IncrementoDaño;
+     this.incremento_damage=IncrementoDamage;
      this.incremento_defensa=IncrementoDefensa;
      this.habilidad_especial=HabilidadEspecial;
      
@@ -54,12 +54,12 @@ ya que el litio el metal mas ligeros*/
         this.incremento_vida = incremento_vida;
     }
 
-    public int getIncremento_daño() {
-        return incremento_daño;
+    public int getIncremento_damage() {
+        return incremento_damage;
     }
 
-    public void setIncremento_daño(int incremento_daño) {
-        this.incremento_daño = incremento_daño;
+    public void setIncremento_damage(int incremento_damage) {
+        this.incremento_damage = incremento_damage;
     }
 
     public int getIncremento_defensa() {

@@ -10,7 +10,7 @@ package Armas;
 public class ArmasBlancas {
       int alcance;
     int longitud;
-    int daño;
+    int damage;
     int velocidadataque;
     String nombre;
     
@@ -19,15 +19,15 @@ public class ArmasBlancas {
  {
      this.alcance=3;
      this.longitud=6;
-     this.daño=5;
+     this.damage=5;
      this.velocidadataque=3;
      this. nombre="pate cabra";
  }
- public ArmasBlancas(int Alcance, int Longitud, int Daño, int Velocidadataque, String Nombre)
+ public ArmasBlancas(int Alcance, int Longitud, int Damage, int Velocidadataque, String Nombre)
  {
      this.alcance=Alcance;
      this.longitud=Longitud;
-     this.daño=Daño;
+     this.damage=Damage;
      this.velocidadataque=Velocidadataque;
      
  }
@@ -48,12 +48,12 @@ public class ArmasBlancas {
         this.longitud = longitud;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getVelocidadataque() {

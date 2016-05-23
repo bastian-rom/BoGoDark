@@ -11,7 +11,7 @@ public class ArmasRadioactivas {
    
      int alcance;
     int velocidad;
-    int daño;
+    int damage;
     int municion;
     int cantidadataque;
     String nombre;
@@ -21,7 +21,7 @@ public class ArmasRadioactivas {
     {
         this.alcance=10;
         this.velocidad=8;
-        this.daño=20;
+        this.damage=20;
         this.municion=15;
         this.cantidadataque=20;
         this.equipado=false;
@@ -29,11 +29,11 @@ public class ArmasRadioactivas {
         
     }
     
-    public ArmasRadioactivas(int Alcance, int Velocidad, int Daño, int Municion, int Cantidadataque, String Nombre, boolean Equipado )
+    public ArmasRadioactivas(int Alcance, int Velocidad, int Damage, int Municion, int Cantidadataque, String Nombre, boolean Equipado )
     {
         this.alcance=Alcance;
         this.velocidad=Velocidad;
-        this.daño=Daño;
+        this.damage=Damage;
         this.municion=Municion;
         this.cantidadataque=Cantidadataque;
         this.equipado=Equipado;
@@ -56,12 +56,12 @@ public class ArmasRadioactivas {
         this.velocidad = velocidad;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getMunicion() {

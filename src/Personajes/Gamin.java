@@ -12,7 +12,7 @@ package Personajes;
 public class Gamin {
      String nombre;
     int vida;
-    int daño;
+    int damage;
     int defensa;
     boolean hostil;
 
@@ -21,15 +21,15 @@ public Gamin()
 
 this.nombre="desconocido";
 this.vida=100;
-this.daño=15;
+this.damage=15;
 this.defensa=10;
 this.hostil=true;
 }
-public Gamin(String Nombre,int Vida,int Daño,int Defensa,boolean Hostil)
+public Gamin(String Nombre,int Vida,int Damage,int Defensa,boolean Hostil)
         
 {
        this.nombre=Nombre;
-       this.daño=Daño;
+       this.damage=Damage;
        this.defensa=Defensa;
        this.vida=Vida;
        this.hostil=Hostil;
@@ -51,12 +51,12 @@ public Gamin(String Nombre,int Vida,int Daño,int Defensa,boolean Hostil)
         this.vida = vida;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getDefensa() {

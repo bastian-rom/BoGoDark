@@ -12,7 +12,7 @@ package Personajes;
 public class FNC {
     String nombre;
     int vida;
-    int daño;
+    int damage;
     int defensa;
     int autoridad;
     boolean brigadier;
@@ -22,12 +22,12 @@ public class FNC {
     {
      this.nombre="alferez";
      this.vida=100;
-     this.daño=40;
+     this.damage=40;
      this.defensa=30;
      this.autoridad=80;
      this.brigadier=true;
     }
-    public FNC(int Vida,String Nombre,int Daño,int Defensa,int Autoridad)
+    public FNC(int Vida,String Nombre,int Damage,int Defensa,int Autoridad)
     {
         this.nombre=Nombre;
         this.vida=vida;
@@ -52,12 +52,12 @@ public class FNC {
         this.vida = vida;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getDefensa() {

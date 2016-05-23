@@ -12,7 +12,7 @@ package Armas;
 public class ArmasQuimicas {
      int alcance;
     int velocidadcarga;
-    int daño;
+    int damage;
     int velocidadataque;
     String nombre;
     int municion;
@@ -21,15 +21,15 @@ public class ArmasQuimicas {
      public ArmasQuimicas()
  {
      this.alcance=3;
-     this.daño=5;
+     this.damage=5;
      this.velocidadataque=3;
      this.nombre="arma quimica";
      this.velocidadcarga=4;
  }
-     public ArmasQuimicas(int Alcance, int Daño, int Velocidadataque, String Nombre, int Velocidadcarga)
+     public ArmasQuimicas(int Alcance, int Damage, int Velocidadataque, String Nombre, int Velocidadcarga)
  {
      this.alcance=Alcance;
-     this.daño=Daño;
+     this.damage=Damage;
      this.velocidadataque=Velocidadataque;
      this.velocidadcarga=Velocidadcarga;
      
@@ -51,12 +51,12 @@ public class ArmasQuimicas {
         this.velocidadcarga = velocidadcarga;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getVelocidadataque() {

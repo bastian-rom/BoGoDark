@@ -12,7 +12,7 @@ package Personajes;
 public class Animal {
        String nombre;
    int vida;
-   int daño;
+   int damage;
    int defensa;
    boolean hostil;
    
@@ -20,14 +20,14 @@ public class Animal {
    {
    this.nombre="desconocido";
    this.vida=50;
-   this.daño=5;
+   this.damage=5;
    this.defensa=10;
    this.hostil=false;
    }
-   public Animal (String Nombre,int Vida,int Daño,int Defensa,boolean Hostil)
+   public Animal (String Nombre,int Vida,int Damage,int Defensa,boolean Hostil)
    {
        this.nombre=Nombre;
-       this.daño=Daño;
+       this.damage=Damage;
        this.defensa=Defensa;
        this.vida=Vida;
        this.hostil=Hostil;
@@ -49,12 +49,12 @@ public class Animal {
         this.vida = vida;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getDefensa() {

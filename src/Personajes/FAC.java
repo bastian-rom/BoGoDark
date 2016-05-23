@@ -12,7 +12,7 @@ package Personajes;
 public class FAC {
     String nombre;
     int vida;
-    int daño;
+    int damage;
     int defensa;
     int autoridad;
     boolean piloto;
@@ -21,16 +21,16 @@ public class FAC {
     {
         this.nombre="sargento segundo";
         this.vida=100;
-        this.daño=40;
+        this.damage=40;
         this.defensa=30;
         this.autoridad=80;
         this.piloto=true;    
                 }         
-            public FAC(int Vida,String Nombre,int Daño,int Defensa,int Autoridad)
+            public FAC(int Vida,String Nombre,int Damage,int Defensa,int Autoridad)
             {
               this.nombre=Nombre;
               this.vida=Vida;
-              this.daño=Daño;
+              this.damage=Damage;
               this.defensa=Defensa;
               this.autoridad=Autoridad;
               this.piloto=true;
@@ -52,12 +52,12 @@ public class FAC {
         this.vida = vida;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getDefensa() {

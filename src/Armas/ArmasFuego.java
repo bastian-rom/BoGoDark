@@ -9,7 +9,7 @@ public class ArmasFuego {
     String nombre;
     int municion;
     int cargador;
-    int daño;
+    int damage;
     int perforacion;
     boolean equipado;
     int vel_disparo;
@@ -18,17 +18,17 @@ public class ArmasFuego {
     {
         this.alcance=0;
         this.cargador=0;
-        this.daño=0;
+        this.damage=0;
         this.equipado=false;
         this.municion=0;
         this.nombre="Arma a distancia";
     }
-    public ArmasFuego(int Alcance,String Nombre,int Municion,int Cargador,int Daño,int Perforacion,
+    public ArmasFuego(int Alcance,String Nombre,int Municion,int Cargador,int Damage,int Perforacion,
             boolean Equipado,int Vel_disparo)
     {
         this.alcance=Alcance;
         this.cargador=Cargador;
-        this.daño=Daño;
+        this.damage=Damage;
         this.equipado=Equipado;
         this.municion=Municion;
         this.nombre=Nombre;
@@ -68,12 +68,12 @@ public class ArmasFuego {
         this.cargador = cargador;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getPerforacion() {

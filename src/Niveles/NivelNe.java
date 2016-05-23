@@ -13,7 +13,7 @@ public class NivelNe {
     
    String nivel_10;
    int incremento_vida;
-   int incremento_daño;
+   int incremento_damage;
    int incremento_defensa;
    boolean habilidad_especial;
    
@@ -22,7 +22,7 @@ public class NivelNe {
 {
 this.nivel_10="nivel 10";
 this.incremento_vida= 20;
-this.incremento_daño= 20;
+this.incremento_damage= 20;
 this.incremento_defensa=20;
 this.habilidad_especial=true;
 
@@ -30,11 +30,11 @@ this.habilidad_especial=true;
 ya que el neon utilizado como bombilla en bares*/
 
 }
- public NivelNe (String Nivel_10,int IncrementoVida,int IncrementoDaño,int IncrementoDefensa,boolean HabilidadEspecial) 
+ public NivelNe (String Nivel_10,int IncrementoVida,int IncrementoDamage,int IncrementoDefensa,boolean HabilidadEspecial) 
  {
      this.nivel_10=Nivel_10;
      this.incremento_vida=IncrementoVida;
-     this.incremento_daño=IncrementoDaño;
+     this.incremento_damage=IncrementoDamage;
      this.incremento_defensa=IncrementoDefensa;
      this.habilidad_especial=HabilidadEspecial;
      
@@ -56,12 +56,12 @@ ya que el neon utilizado como bombilla en bares*/
         this.incremento_vida = incremento_vida;
     }
 
-    public int getIncremento_daño() {
-        return incremento_daño;
+    public int getIncremento_damage() {
+        return incremento_damage;
     }
 
-    public void setIncremento_daño(int incremento_daño) {
-        this.incremento_daño = incremento_daño;
+    public void setIncremento_damage(int incremento_damage) {
+        this.incremento_damage = incremento_damage;
     }
 
     public int getIncremento_defensa() {

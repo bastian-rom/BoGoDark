@@ -9,7 +9,7 @@ package Personajes;
 public class Enemigo {
    String nombre;
    int vida;
-   int daño;
+   int damage;
    int defensa;
    boolean hostil;
    
@@ -17,7 +17,7 @@ public class Enemigo {
    {
    this.nombre="desconocido";
    this.vida=50;
-   this.daño=5;
+   this.damage=5;
    this.defensa=10;
    this.hostil=true;
    }
@@ -38,12 +38,12 @@ public class Enemigo {
         this.vida = vida;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getDefensa() {
@@ -61,10 +61,10 @@ public class Enemigo {
     public void setHostil(boolean hostil) {
         this.hostil = hostil;
     }
-   public Enemigo (String Nombre,int Vida,int Daño,int Defensa)
+   public Enemigo (String Nombre,int Vida,int Damage,int Defensa)
    {
        this.nombre=Nombre;
-       this.daño=Daño;
+       this.damage=Damage;
        this.defensa=Defensa;
        this.vida=Vida;
    }

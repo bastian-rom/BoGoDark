@@ -13,7 +13,7 @@ public class Aliado {
     
     String nombre;
     int vida;
-    int daño;
+    int damage;
     int defensa;
     boolean aliado;
     
@@ -21,16 +21,16 @@ public class Aliado {
    {
     this.nombre="Aliado desconocido";
     this.vida =100;
-    this.daño= 10;
+    this.damage= 10;
     this.defensa=10;
     this.aliado=true;
    }
    
-   public Aliado(int Defensa,String Nombre,int Vida, int Daño)
+   public Aliado(int Defensa,String Nombre,int Vida, int Damage)
    {
     this.nombre=Nombre;
     this.vida =Vida;
-    this.daño= Daño;
+    this.damage= Damage;
     this.defensa=Defensa;
     this.aliado=true;
    }
@@ -51,12 +51,12 @@ public class Aliado {
         this.vida = vida;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
     public int getDefensa() {
         return defensa;

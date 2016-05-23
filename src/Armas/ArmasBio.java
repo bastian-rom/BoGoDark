@@ -11,7 +11,7 @@ package Armas;
  */
 public class ArmasBio {
     
-   int daño;
+   int damage;
     int municion;
     int alcance;
     String nombre;
@@ -19,29 +19,29 @@ public class ArmasBio {
     public ArmasBio ()
     {
     this.alcance=10;
-    this.daño=12;
+    this.damage=12;
     this.municion=20;
     this.nombre="arma biologica";
     }
     
     
     
-    public ArmasBio( int Alcance,int Daño, int Municion, String Nombre)
+    public ArmasBio( int Alcance,int Damage, int Municion, String Nombre)
     {
     this.alcance=Alcance;
-    this.daño=Daño;
+    this.damage=Damage;
     this.municion=Municion;
     this.nombre=Nombre;
     
     
    }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getMunicion() {

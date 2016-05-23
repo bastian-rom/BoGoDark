@@ -20,7 +20,7 @@
 public class Guerrillero {
     String nombre;
     int vida;
-    int daño;
+    int damage;
     int defensa;
     int autoridad;
     
@@ -29,16 +29,16 @@ public class Guerrillero {
   {
   this.nombre="cano";
   this.vida=100;
-  this.daño=15;
+  this.damage=15;
   this.defensa=25;
   this.autoridad=0;
           
   }
-  public Guerrillero(int Vida,String Nombre,int Daño,int Defensa,int Autoridad)
+  public Guerrillero(int Vida,String Nombre,int Damage,int Defensa,int Autoridad)
   { 
       this.nombre=Nombre;
       this.vida=Vida;
-      this.daño=Daño;
+      this.damage=Damage;
       this.defensa=Defensa; 
       this.autoridad=Autoridad;
               
@@ -60,12 +60,12 @@ public class Guerrillero {
         this.vida = vida;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getDefensa() {

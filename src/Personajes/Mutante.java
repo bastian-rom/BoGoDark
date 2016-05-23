@@ -13,7 +13,7 @@ package Personajes;
 public class Mutante {
 String nombre;
     int vida;
-    int daño;
+    int damage;
     int peligro;
 
 
@@ -22,16 +22,16 @@ String nombre;
   {
   this.nombre="super mutante";
   this.vida=100;
-  this.daño=15;
+  this.damage=15;
   this.peligro=25;
  
           
   }
-  public Mutante( int Vida, String Nombre, int Daño, int Peligro)
+  public Mutante( int Vida, String Nombre, int Damage, int Peligro)
   { 
       this.nombre=Nombre;
       this.vida=Vida;
-      this.daño=Daño;
+      this.damage=Damage;
       this.peligro=Peligro;
               
   }
@@ -52,12 +52,12 @@ String nombre;
         this.vida = vida;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getPeligro() {
