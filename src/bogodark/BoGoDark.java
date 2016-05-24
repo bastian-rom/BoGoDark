@@ -6,23 +6,29 @@
 package bogodark;
 
 import Personajes.*;
+import bogodark.Dados;
 import javax.swing.JOptionPane;
 
 public class BoGoDark {
+    
 
     public static void main(String[] args) 
     {   
-        String[] opciones=new String[5];
-        opciones[0]="op1";
-        opciones[1]="op2";
-        opciones[2]="op3";
-        opciones[3]="mutante";
-        opciones[4]="persona";
         
+        String[] sel=new String[5];
+        sel[0]="2";
+        sel[1]="4";
+        sel[2]="6";
+        sel[3]="8";
+        sel[3]="8";
+        sel[4]="10";
+        int entrada=JOptionPane.showOptionDialog(null,"mensaje","cambiar titulo",JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE,null,sel,sel[0]);
+        System.out.println(Dados.Dado(Dados.opciones[entrada]));
+        System.out.println(Dados.opciones[entrada+1]);
+      
                 
       intro();
-      int entrada=JOptionPane.showOptionDialog(null,"mensaje","cambiar titulo",JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE,null,opciones,opciones[0]);
-      System.out.println(entrada);
+      
       
     }
 
