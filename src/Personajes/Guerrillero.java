@@ -38,7 +38,7 @@ public class Guerrillero {
   this.nombre="cano";
   this.vida=100;
   this.damage=15;
-  this.defensa=25;
+  this.defensa=12;
   this.autoridad=0;
   this.fuer=Dados.Dado(20);
   this.des=Dados.Dado(20);
@@ -54,7 +54,7 @@ public class Guerrillero {
       this.nombre=Nombre;
       this.vida=100;
   this.damage=15;
-  this.defensa=25;
+  this.defensa=12;
   this.autoridad=0; 
       this.fuer=Dados.Dado(20);
      this.des=Dados.Dado(20);
