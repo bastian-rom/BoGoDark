@@ -6,34 +6,47 @@
  */
 package Personajes;
 
+import bogodark.Dados;
+
 /**
  *
  * @author Sebastian
  */
 public class Mutante {
-String nombre;
+  String nombre;
     int vida;
     int damage;
-    int peligro;
-
-
+    int defensa;
+    int autoridad;
+    int fuer;
+    int des;
+    int con;
+    int inte;
+    int sab;
+    int car;
+    
   public Mutante()
           
   {
   this.nombre="super mutante";
   this.vida=100;
   this.damage=15;
-  this.peligro=25;
+  this.defensa=25;
+  this.autoridad=0;
+  this.fuer=Dados.Dado(20);
+  this.des=Dados.Dado(20);
+  this.con=Dados.Dado(20);
+  this.inte=Dados.Dado(20);
+  this.sab=Dados.Dado(20);
+  this.car=Dados.Dado(20);
+ 
  
           
   }
-  public Mutante( int Vida, String Nombre, int Damage, int Peligro)
+  public Mutante(  String Nombre)
   { 
       this.nombre=Nombre;
-      this.vida=Vida;
-      this.damage=Damage;
-      this.peligro=Peligro;
-              
+     
   }
 
     public String getNombre() {
@@ -60,13 +73,8 @@ String nombre;
         this.damage = damage;
     }
 
-    public int getPeligro() {
-        return peligro;
+   
     }
 
-    public void setPeligro(int peligro) {
-        this.peligro = peligro;
-    }
 
-}
 

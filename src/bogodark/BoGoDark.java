@@ -15,23 +15,44 @@ public class BoGoDark {
     public static void main(String[] args) 
     {   
         
-        String[] sel=new String[5];
+        String[] sel=new String[10];
         sel[0]="2";
-        sel[1]="4";
-        sel[2]="6";
-        sel[3]="8";
-        sel[3]="8";
-        sel[4]="10";
+        sel[1]="3";
+        sel[2]="4";
+        sel[3]="6";
+        sel[4]="8";
+        sel[5]="10";
+        sel[6]="12";
+        sel[7]="20";
+        sel[8]="50";
+        sel[9]="100";
         int entrada=JOptionPane.showOptionDialog(null,"mensaje","cambiar titulo",JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE,null,sel,sel[0]);
         System.out.println(Dados.Dado(Dados.opciones[entrada]));
-        System.out.println(Dados.opciones[entrada+1]);
+        
+        
+        Guerrillero mono=new Guerrillero("Mono Jojoy");
+        
+        Mutante kobold=new Mutante("Kobold");
+        
+        
+        
+        
       
-                
-      intro();
+        
+        
+        
       
       
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
      private static void intro()
      
     {
@@ -112,7 +133,7 @@ public class BoGoDark {
         /*JhonWOnka*/
 
         Policia p1 = new Policia(100, "desconocido", 15, 10, 0);
-        Guerrillero p2 = new Guerrillero(100, "desconocido", 15, 10, 0);
+        Guerrillero p2 = new Guerrillero( "desconocido");
         boolean primero = false;
         while (p1.getVida() > 0 && p2.getVida() > 0);
         {

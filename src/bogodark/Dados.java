@@ -13,7 +13,7 @@ import java.util.Random;
 public class Dados {
     
     
-   public static int[] opciones={2,3,4,6,8,10,12,14,20,24,50,100};
+   public static int[] opciones={2,3,4,6,8,10,12,20,50,100};
     
      
       public static int Dado(int x)
