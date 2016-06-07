@@ -17,7 +17,7 @@ public class Bombero {
     int defensa;
     boolean hostil;
 
-public Bombero() 
+public Bombero(String Nombre) 
 {
 
 this.nombre="desconocido";

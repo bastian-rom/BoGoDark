@@ -14,7 +14,7 @@ public class Nerd {
     String nombre;
     
     
-    public Nerd ()
+    public Nerd (String Nombre)
     {
     this.daño = 10;
     this.inteligencia=100;

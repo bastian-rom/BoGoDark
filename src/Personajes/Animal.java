@@ -16,7 +16,7 @@ public class Animal {
    int defensa;
    boolean hostil;
    
-   public Animal ()
+   public Animal (String Nombre)
    {
    this.nombre="desconocido";
    this.vida=50;

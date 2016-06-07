@@ -16,7 +16,7 @@ public class Ejercito {
     int defensa;
     int autoridad;
     
-    public Ejercito()
+    public Ejercito(String Nombre)
     {
         this.nombre="coronel";
         this.vida=100;
