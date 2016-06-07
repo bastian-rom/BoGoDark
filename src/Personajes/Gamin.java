@@ -10,7 +10,7 @@ package Personajes;
  * @author ttaa
  */
 public class Gamin {
-     String nombre;
+    String nombre;
     int vida;
     int damage;
     int defensa;
