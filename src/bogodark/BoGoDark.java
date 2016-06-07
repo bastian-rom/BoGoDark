@@ -8,6 +8,7 @@ package bogodark;
 import Personajes.*;
 import bogodark.Dados;
 import javax.swing.JOptionPane;
+import static Escenarios.Supermercado.*;
 
 public class BoGoDark {
     
@@ -15,91 +16,7 @@ public class BoGoDark {
     public static void main(String[] args) 
     {   
         
-        String[] sel=new String[10];
-        sel[0]="2";
-        sel[1]="3";
-        sel[2]="4";
-        sel[3]="6";
-        sel[4]="8";
-        sel[5]="10";
-        sel[6]="12";
-        sel[7]="20";
-        sel[8]="50";
-        sel[9]="100";
-        /*int entrada=JOptionPane.showOptionDialog(null,"mensaje","cambiar titulo",JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE,null,sel,sel[0]);
-        System.out.println(Dados.Dado(Dados.opciones[entrada]));*/
-        
-        
-        Guerrillero mono=new Guerrillero("Mono Jojoy");
-        
-        Mutante kobold=new Mutante("Kobold");
-        Mutante jz=new Mutante("java");
-        jz.setVida(jz.getVida()-(Dados.Dado(6)-1+Dados.Dado(6)-1+Dados.Dado(6)-1)+1);
-        
-        System.out.println("El man tiene "+ jz.getVida()+ "de vida");
-        
-        /*int entrada1=JOptionPane.showOptionDialog(null,"mensaje","wiiiiii",JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE,null,sel,sel[0]);
-        
-        System.out.println(Dados.Dado(Dados.opciones[entrada1]));*/
-        int primero = Dados.Dado(3);
-        
-        while (mono.getVida()>0&&kobold.getVida()>0)
-        {
-            if(primero>2)
-            {
-                if(Dados.Dado(20)>kobold.getCA())
-                {
-                    kobold.setVida(kobold.getVida()-Dados.Dado(12)-Dados.Dado(6));
-                }
-                else
-                {
-                    System.out.println("el mono falló");
-                }
-                if(Dados.Dado(20)>mono.getDefensa())
-                {
-                    mono.setVida(mono.getVida()-(Dados.Dado(6)-1+Dados.Dado(6)-1+Dados.Dado(6)-1)+1);                    
-                }
-                else
-                {
-                    System.out.println("el Kobold falló");
-                }            
-            }
-            else
-            {
-                 if(Dados.Dado(20)>mono.getDefensa())
-                {
-                    mono.setVida(mono.getVida()-(Dados.Dado(6)-1+Dados.Dado(6)-1+Dados.Dado(6)-1)+1);                    
-                }
-                else
-                {
-                    System.out.println("el Kobold falló");
-                    System.out.println("Defensa Mono: "+mono.getDefensa());
-                } 
-                if(Dados.Dado(20)>kobold.getCA())
-                {
-                    kobold.setVida(kobold.getVida()-Dados.Dado(12)-Dados.Dado(6));
-                }
-                else
-                {
-                    System.out.println("el mono falló");
-                }
-                  
-            }
-            System.out.println("Kobold: "+kobold.getVida());
-            System.out.println("Mono: "+mono.getVida());
-        }
-        if (mono.getVida()>0)
-        {
-            System.out.println("El Mono es el ganador");
-        }
-        else {
-            System.out.println("El kobold es el ganador");
-        }
-        
-      
-        
-        
-        
+            niveljavierh();
       
       
     }
@@ -107,6 +24,14 @@ public class BoGoDark {
     
     
     
+    
+    
+    
+    public static void niveljavierh()
+    {
+        level_inicio();
+        
+    }
     
     
     
@@ -229,5 +154,98 @@ public class BoGoDark {
                 JOptionPane.showMessageDialog(null, Armado.getNombre() + "le hace la henkidama a" + Tombo.getNombre());
             }
         }
+    }
+    
+    public static void clase_anterior()
+    {       
+        String[] sel=new String[10];
+        sel[0]="2";
+        sel[1]="3";
+        sel[2]="4";
+        sel[3]="6";
+        sel[4]="8";
+        sel[5]="10";
+        sel[6]="12";
+        sel[7]="20";
+        sel[8]="50";
+        sel[9]="100";
+        /*int entrada=JOptionPane.showOptionDialog(null,"mensaje","cambiar titulo",JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE,null,sel,sel[0]);
+        System.out.println(Dados.Dado(Dados.opciones[entrada]));*/
+        
+        
+        Guerrillero mono=new Guerrillero("Mono Jojoy");
+        
+        Mutante kobold=new Mutante("Kobold");
+        Mutante jz=new Mutante("java");
+        jz.setVida(jz.getVida()-(Dados.Dado(6)-1+Dados.Dado(6)-1+Dados.Dado(6)-1)+1);
+        
+        System.out.println("El man tiene "+ jz.getVida()+ "de vida");
+        
+        /*int entrada1=JOptionPane.showOptionDialog(null,"mensaje","wiiiiii",JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE,null,sel,sel[0]);
+        
+        System.out.println(Dados.Dado(Dados.opciones[entrada1]));*/
+        int primero = Dados.Dado(3);
+        
+        
+        while (mono.getVida()>0&&kobold.getVida()>0)
+        {
+            if(primero>2)
+            {
+                if(Dados.Dado(20)>kobold.getCA())
+                {
+                    kobold.setVida(kobold.getVida()-Dados.Dado(12)-Dados.Dado(6));
+                }
+                else
+                {
+                    System.out.println("el mono falló");
+                }
+                if(Dados.Dado(20)>mono.getDefensa())
+                {
+                    mono.setVida(mono.getVida()-(Dados.Dado(6)-1+Dados.Dado(6)-1+Dados.Dado(6)-1)+1);                    
+                }
+                else
+                {
+                    System.out.println("el Kobold falló");
+                }            
+            }
+            else
+            {
+                 if(Dados.Dado(20)>mono.getDefensa())
+                {
+                    mono.setVida(mono.getVida()-(Dados.Dado(6)-1+Dados.Dado(6)-1+Dados.Dado(6)-1)+1);                    
+                }
+                else
+                {
+                    System.out.println("el Kobold falló");
+                    System.out.println("Defensa Mono: "+mono.getDefensa());
+                } 
+                if(Dados.Dado(20)>kobold.getCA())
+                {
+                    kobold.setVida(kobold.getVida()-Dados.Dado(12)-Dados.Dado(6));
+                }
+                else
+                {
+                    System.out.println("el mono falló");
+                }
+                  
+            }
+            System.out.println("Kobold: "+kobold.getVida());
+            System.out.println("Mono: "+mono.getVida());
+        }
+        if (mono.getVida()>0)
+        {
+            System.out.println("El Mono es el ganador");
+            enemies-=1;
+        }
+        else {
+            System.out.println("El kobold es el ganador");
+            JOptionPane.showMessageDialog(null,"Asesinado por "+Mutante.class.getName());
+            reiniciar();
+        }
+        
+      
+        
+        
+
     }
 }
