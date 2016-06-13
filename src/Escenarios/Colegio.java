@@ -20,7 +20,7 @@ public class Colegio {
    
     public static void searmoelpedo(){      
         Gamin Gamin = new Gamin();
-        Nerd Nerd = new Nerd(); 
+        Nerd Nerd = new Nerd("hola"); 
         while (Gamin.getVida()>0&&Nerd.getVida()>0){
         if (Dados.Dado(2)==1){     
         Gamin.setVida(Gamin.getVida()-Nerd.getDaño());
