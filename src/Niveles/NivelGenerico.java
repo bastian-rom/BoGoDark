@@ -5,6 +5,9 @@
  */
 package Niveles;
 
+import bogodark.Dados;
+
+
 /**
  *
  * @author Usuario
@@ -14,21 +17,43 @@ public class NivelGenerico {
     private int incremento_vida;
     private int incremento_damage;
     private boolean habilidad_especial;
+    private int enemigos;
+    private int experiencia;
+    private int muertes;
+
     
 
     
-    public NivelGenerico(String Nivel)
+    public NivelGenerico(String Nivel, private int muertes)
     {
-     this.
+     this.experiencia=muertes;
+     this.incremento_damage=25;
+     this.incremento_vida=30;
+     this.nivel=Nivel;
+     this.enemigos= Dados.Dado(50);
+     
+     
+     
+    }
+    int atacar;
+    public class atacar();
+    
+    
+    {
+     if ( Math.random()>5 )
+         
+ 
+    
+    }
+ 
+    
      
      
      
      
-        
-        
-        
-     
+    
+    
+    
     }
            
     
-}
