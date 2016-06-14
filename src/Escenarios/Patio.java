@@ -12,7 +12,6 @@ import javax.swing.JOptionPane;
 jeison velasco :( 
  */
 public class Patio 
-
 {
    
 Ejercito loca = new Ejercito("loca");
@@ -21,15 +20,12 @@ Nerd madrid=new Nerd ("madrid");
 Animal cosito=new Animal ("pepe");
 Bombero mono=new Bombero ("mono");
 
-
-
-
 int x;
 
-public static void Pelea(){
-        boolean primero= true;
+public void Pelea(){
 {
-    while (loca.getVida() > 0 && perras.getVida() > 0);
+    boolean primero= true;
+    while(loca.getVida()> 0 && perras.getVida()> 0)
         {
             if (Math.random() > 0.5)
             {
@@ -49,7 +45,7 @@ public static void Pelea(){
             } 
             else 
             {
-                perras.setVida(perras.getVida() - (loca.getDamage() - perras.getDefensa()));
+                perras.setVida(perras.getVida() - (loca.getDamage() - perras.getCA()));
             }
         }
     }
