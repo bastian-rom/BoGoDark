@@ -12,7 +12,7 @@
 
     package Personajes;
 
-import bogodark.Dados;
+import Armas.Arma;
 
 /**
  *
@@ -21,12 +21,16 @@ import bogodark.Dados;
  /*editada por jeisson aldana mora*/
 public class Guerrillero  extends Personaje{
     
-     Armas[] chaleco=new Armas[3];
-     Armas[] cinturon=new Armas[3];
+     Arma[] chaleco=new Arma[3];
+     Arma[] cinturon=new Arma[3];
     
   public Guerrillero()
   {
-      
+      super("Guerrillero");
+  }
+  public Guerrillero(String name)
+  {
+      super(name);
   }
 }       
 

@@ -13,6 +13,7 @@ import bogodark.Dados;
  * @author Sebastian
  */
 public class Mutante {
+
     String nombre;
     int vida;
     int damage;
@@ -25,40 +26,37 @@ public class Mutante {
     int sab;
     int car;
     int CA;
-    
-  public Mutante()
-  {
-  this.nombre="super mutante";
-  this.vida=100;
-  this.damage=15;
-  this.defensa=25;
-  this.autoridad=0;
-  this.fuer=Dados.Dado(20);
-  this.des=Dados.Dado(20);
-  this.con=Dados.Dado(20);
-  this.inte=Dados.Dado(20);
-  this.sab=Dados.Dado(20);
-  this.car=Dados.Dado(20);
-  this.CA=12;
- 
- 
-          
-  }
-  public Mutante(  String Nombre)
-  { 
-    this.nombre=Nombre;
-    this.vida=100;
-    this.damage=15;
-    this.defensa=25;
-    this.autoridad=0;
-    this.fuer=Dados.Dado(20);
-    this.des=Dados.Dado(20);
-    this.con=Dados.Dado(20);
-    this.inte=Dados.Dado(20);
-    this.sab=Dados.Dado(20);
-    this.car=Dados.Dado(20);
-    this.CA=12;
-   }
+
+    public Mutante() {
+        this.nombre = "super mutante";
+        this.vida = 100;
+        this.damage = 15;
+        this.defensa = 25;
+        this.autoridad = 0;
+        this.fuer = Dados.Dado(20);
+        this.des = Dados.Dado(20);
+        this.con = Dados.Dado(20);
+        this.inte = Dados.Dado(20);
+        this.sab = Dados.Dado(20);
+        this.car = Dados.Dado(20);
+        this.CA = 12;
+
+    }
+
+    public Mutante(String Nombre) {
+        this.nombre = Nombre;
+        this.vida = 100;
+        this.damage = 15;
+        this.defensa = 25;
+        this.autoridad = 0;
+        this.fuer = Dados.Dado(20);
+        this.des = Dados.Dado(20);
+        this.con = Dados.Dado(20);
+        this.inte = Dados.Dado(20);
+        this.sab = Dados.Dado(20);
+        this.car = Dados.Dado(20);
+        this.CA = 12;
+    }
 
     public String getNombre() {
         return nombre;
@@ -148,8 +146,4 @@ public class Mutante {
         this.CA = CA;
     }
 
-   
-    }
-
-
-
+}
