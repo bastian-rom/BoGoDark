@@ -248,4 +248,54 @@ public class BoGoDark {
         
 
     }
-}
+    
+    
+    
+    
+    
+    
+    
+    
+    public static void Peleita(){
+        String nerd="";
+        String policia="";
+        
+
+        Nerd Ñoño = new Nerd("Ñoño",10, 90, 100, 10,100,50);
+        Policia alberto = new Policia(100, "alberto", 35, 20, 100);
+        nerd=JOptionPane.showInputDialog("ingrese nombre de nerd");
+        policia=JOptionPane.showInputDialog("ingrese nombre de policia");
+        JOptionPane.showMessageDialog(null, nerd + " contra " + policia);
+        
+        while (Ñoño.getVida() > 0 && alberto.getVida() > 0) {
+            boolean Primero = false;
+            if (Math.random() > 0.5) {
+                Primero = true;
+            }
+            if (Primero) {
+                Ñoño.setVida(Ñoño.getVida() - (Ñoño.getDefensa()- alberto.getDamage()));
+                JOptionPane.showMessageDialog(null, alberto.getNombre() + "le pega  " + Ñoño.getNombre());
+            } else {
+                alberto.setVida(alberto.getVida() - (alberto.getDefensa() - Ñoño.getDamage()));
+                JOptionPane.showMessageDialog(null, Ñoño.getNombre() + "le da duro" + alberto.getNombre());
+            }
+        }
+    }
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+}      
+
+
+    
+
+
+
