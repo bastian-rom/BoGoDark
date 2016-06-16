@@ -7,16 +7,17 @@ package Personajes;
 public class Nerd {
     
     int inteligencia;
-    int daño;
+    int damage;
     int sabiduria;
     int velocidad;
     int vida;
     String nombre;
+    int defensa;
     
     
     public Nerd (String Nombre)
     {
-    this.daño = 10;
+    this.damage = 10;
     this.inteligencia=100;
     this.nombre="lambon";
     this.sabiduria=80;
@@ -25,14 +26,15 @@ public class Nerd {
     
     }
     
-    public Nerd (String Nombre, int Daño, int Inteligencia, int Sabiduria, int Velocidad, int Vida)
+    public Nerd (String Nombre, int Damage, int Inteligencia, int Sabiduria, int Velocidad, int Vida,int Defensa)
     {
-     this.daño=Daño;
+     this.damage=Damage;
      this.inteligencia=Inteligencia;
      this.nombre=Nombre;
      this.sabiduria=Sabiduria;
      this.velocidad=Velocidad;
      this.vida=Vida;
+     this.defensa=Defensa;
      
      
      
@@ -47,12 +49,12 @@ public class Nerd {
         this.inteligencia = inteligencia;
     }
 
-    public int getDaño() {
-        return daño;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDaño(int daño) {
-        this.daño = daño;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getSabiduria() {
@@ -87,7 +89,15 @@ public class Nerd {
         this.nombre = nombre;
     }
 
-        
-        
-    
+    public int getDefensa() {
+        return defensa;
+    }
+
+    public void setDefensa(int defensa) {
+        this.defensa = defensa;
+    }
 }
+
+   
+
+    
