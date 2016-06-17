@@ -35,6 +35,7 @@ public class Arma {
     public int Disparar()
     {
         int balas=getCargador()-((getCadencia()*100)/getCadencia());
+
         int disparos=getDamage()*balas;
         setCargador(getCargador()-balas);
         return disparos;
@@ -43,11 +44,7 @@ public class Arma {
     public void Recargar()
     {
         setCargador(getMunicionmax());
-    }
-    
-    
-    
-    
+    }  
     
    
     public String getNombre() {
@@ -97,8 +94,7 @@ public class Arma {
     public void setMunicionmax(int municionmax) {
         this.municionmax = municionmax;
     }
-    
-    
+     
     
 }
 
