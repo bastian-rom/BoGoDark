@@ -110,13 +110,13 @@ switch (Cons_caj) {
                             int Valor;
                             Otro = Integer.parseInt(JOptionPane.showInputDialog("ingrese un valor"));
                             Valor = (Saldo - Otro );
-                            if (Valor > 10000 || Valor < 1000000) {
+                            if (Otro > 10000 || Otro < 1000000) {
                                 JOptionPane.showMessageDialog (null, "Usted retiro "+ Otro);
                                 JOptionPane.showMessageDialog(null, " Su saldo es: " + Valor);
                                 JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
                                 
                             } else {
-                                JOptionPane.showMessageDialog(null, "Usted no puede retirar "+Valor+" pesos" );
+                                JOptionPane.showMessageDialog(null, "Usted no puede retirar "+Otro+" pesos" );
                                 JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");break;
            
                             }}
@@ -185,13 +185,13 @@ switch (Cons_caj) {
                             int Valor;
                             Otro = Integer.parseInt(JOptionPane.showInputDialog("ingrese un valor"));
                             Valor = (Saldo - Otro );
-                            if (Valor > 10000) {
+                            if (Otro > 10000 || Otro < 1000000) {
                                 JOptionPane.showMessageDialog (null, "Usted retiro "+ Otro);
                                 JOptionPane.showMessageDialog(null, " Su saldo es: " + Valor);
                                 JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
                                 
                             } else {
-                                JOptionPane.showMessageDialog(null, "Usted no puede retirar "+Valor+" pesos" );
+                                JOptionPane.showMessageDialog(null, "Usted no puede retirar "+Otro+" pesos" );
                                 JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
                             }} break;
 
