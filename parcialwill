@@ -1,0 +1,209 @@
+package parcialwill;
+
+import javax.swing.JOptionPane;
+
+public class Parcialwill {
+
+    public static void main(String[] args) {
+
+   
+        /* Bienvenida */
+        JOptionPane.showMessageDialog(null, "Bienvenido a su banco, por favor ingrese su usuario");
+
+        /* usuario y contraseña*/
+        String Usuario = "william";
+        String Clave = "william";
+        String usuar = JOptionPane.showInputDialog("ingrese su usuario");
+        String cont = JOptionPane.showInputDialog("ingrese su contraseña");
+        int Saldo = 1000000;
+
+        if (cont != usuar) {
+            JOptionPane.showMessageDialog(null, "Bienvenido " + usuar);
+
+            /*opcones del cajero*/
+            String[] Opciones = new String[3];
+            Opciones[0] = "consultar saldo";
+            Opciones[1] = "Retirar Dinero";
+            Opciones[2] = "salir";
+            int Cons_caj;
+            
+            Cons_caj = JOptionPane.showOptionDialog(null, "¿Que transaccion desea hacer?", "cambiar", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, Opciones, Opciones[0]);
+            
+            
+          
+            
+            
+                    
+switch (Cons_caj) {
+        /* consultar saldo*/
+        case 0:
+                    JOptionPane.showMessageDialog(null, "Su saldo es de: " + Saldo);
+                    
+                    String[] Menu = new String[2];
+                    Menu[0] = "Retirar Dinero";
+                    Menu[1] = "Salir";
+                    
+                    int Otro_menu;
+                    Otro_menu = JOptionPane.showOptionDialog(null, "¿Que desea hacer?", "cambiar", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, Menu, Menu[0]);
+                     
+                    switch (Otro_menu){
+                        
+              /*consultar saldo, retirar*/          
+              case 0: int Retirar;
+              
+                    String[] Sacar1 = new String[6];
+                    Sacar1[0] = "500.000";
+                    Sacar1[1] = "300.000";
+                    Sacar1[2] = "200.000";
+                    Sacar1[3] = "100.000";
+                    Sacar1[4] = "50.000";
+                    Sacar1[5] = "otro";
+                    
+                    
+                    int Real;
+                    Retirar = JOptionPane.showOptionDialog(null, "¿Que cantidad desea retirar?", "cambiar", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, Sacar1, Sacar1[0]);
+                    switch (Retirar) {
+                        
+                            case 0:
+                                
+                            Real = (Saldo - 500000);
+                            JOptionPane.showMessageDialog(null, "Usted retiro 500.000");
+                            JOptionPane.showMessageDialog(null, "su saldo es " + Real);
+                            JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            break;
+
+                            case 1:
+                                
+                            Real = (Saldo - 300000);
+                            JOptionPane.showMessageDialog (null, "Usted retiro 300.000");
+                            JOptionPane.showMessageDialog(null, "su saldo es " + Real);
+                             JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            break;
+
+                            case 2:
+                                 
+                            Real = (Saldo - 200000);
+                             JOptionPane.showMessageDialog (null, "Usted retiro 200.000");
+                            JOptionPane.showMessageDialog(null, "su saldo es " + Real);
+                            JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            break;
+
+                            case 3:
+                                
+                            Real = (Saldo - 100000);
+                            JOptionPane.showMessageDialog (null, "Usted retiro 100.000");
+                            JOptionPane.showMessageDialog(null, "su saldo es " + Real);
+                            JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            break;
+
+                            case 4:
+                                
+                            Real = (Saldo - 50000);
+                            JOptionPane.showMessageDialog (null, "Usted retiro 50.000");
+                            JOptionPane.showMessageDialog(null, "su saldo es " + Real);
+                            JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            break;
+
+                            case 5:
+                                
+                            int Otro;
+                            int Valor;
+                            Otro = Integer.parseInt(JOptionPane.showInputDialog("ingrese un valor"));
+                            Valor = (Saldo - Otro );
+                            if (Valor > 10000 || Valor < 1000000) {
+                                JOptionPane.showMessageDialog (null, "Usted retiro "+ Otro);
+                                JOptionPane.showMessageDialog(null, " Su saldo es: " + Valor);
+                                JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                                
+                            } else {
+                                JOptionPane.showMessageDialog(null, "Usted no puede retirar "+Valor+" pesos" );
+                                JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");break;
+           
+                            }}
+                    /*consulatr saldo , salir*/
+                    case 1: JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");break;}
+                        
+        /*retirar dinero*/            
+        case 1:
+                    
+                    String[] Sacar = new String[6];
+                    Sacar[0] = "500.000";
+                    Sacar[1] = "300.000";
+                    Sacar[2] = "200.000";
+                    Sacar[3] = "100.000";
+                    Sacar[4] = "50.000";
+                    Sacar[5] = "otro";
+
+                    int Retirar;
+                    int Real;
+                    Retirar = JOptionPane.showOptionDialog(null, "¿Que cantidad desea retirar?", "cambiar", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, Sacar, Sacar[0]);
+                    switch (Retirar) {
+                        
+                    case 0:
+                        
+                            Real = (Saldo - 500000);
+                            JOptionPane.showMessageDialog (null, "Usted retiro 500.000");
+                            JOptionPane.showMessageDialog(null, "su saldo es " + Real);
+                            JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            break;
+
+                    case 1:
+                        
+                            Real = (Saldo - 300000);
+                            JOptionPane.showMessageDialog (null, "Usted retiro 300.000");
+                            JOptionPane.showMessageDialog(null, "su saldo es " + Real);
+                             JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            break;
+
+                    case 2:
+                        
+                            Real = (Saldo - 200000);
+                             JOptionPane.showMessageDialog (null, "Usted retiro 200.000");
+                            JOptionPane.showMessageDialog(null, "su saldo es " + Real);
+                            JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            break;
+
+                    case 3:
+                        
+                            Real = (Saldo - 100000);
+                            JOptionPane.showMessageDialog (null, "Usted retiro 100.000");
+                            JOptionPane.showMessageDialog(null, "su saldo es " + Real);
+                            JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            break;
+
+                    case 4:
+                        
+                            Real = (Saldo - 50000);
+                            JOptionPane.showMessageDialog (null, "Usted retiro 50.000");
+                            JOptionPane.showMessageDialog(null, "su saldo es " + Real);
+                            JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            break;
+
+                    case 5:
+                        
+                            int Otro;
+                            int Valor;
+                            Otro = Integer.parseInt(JOptionPane.showInputDialog("ingrese un valor"));
+                            Valor = (Saldo - Otro );
+                            if (Valor > 10000) {
+                                JOptionPane.showMessageDialog (null, "Usted retiro "+ Otro);
+                                JOptionPane.showMessageDialog(null, " Su saldo es: " + Valor);
+                                JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                                
+                            } else {
+                                JOptionPane.showMessageDialog(null, "Usted no puede retirar "+Valor+" pesos" );
+                                JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+                            }} break;
+
+
+        case 2:
+                    JOptionPane.showMessageDialog(null, "Gracias por elegir a su banco");
+
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "El usuario y la contraseña no son compatibles");
+            
+        }
+
+    }
+}
